@@ -1,0 +1,428 @@
+body{
+    background-color: black;
+    color: white;
+     font-family: "Montserrat", sans-serif;
+     margin: 0.5rem 0.25rem;
+     overflow: hidden;
+
+     /* in this we have 3 sections out of which only one section is scrollable. overfolow hidden does
+     not allow to go down. not scroll */
+}
+
+
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    
+    
+    
+    
+}
+
+.main_content{
+   background-color:rgb(11, 11, 11);
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+  
+    
+
+    /* there is a difference between auto and scroll. auto shows the cursor only when the 
+    text is overflowed */
+
+
+
+}
+
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 85px;
+
+
+}
+
+.nav{
+    background-color: rgb(11, 11, 11);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_option{
+    line-height: 2.5rem;
+    opacity: 0.6;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav_option:hover{
+  
+    opacity: 1;
+   
+}
+
+
+
+.nav_option i{
+    font-size: 1.25rem;
+}
+
+.nav_option a{
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+
+.lib_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library{
+
+    background-color: rgb(11, 11, 11);
+    height: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.your_library img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    display: flex;
+    font-size: 1.25rem;
+
+}
+
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.6    ;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 11rem;
+    border-radius: 1rem;
+    margin: 0.75rem 0 1.25rem 0;
+    padding: 0.5rem 0.8rem;
+    border: none;
+}
+
+.box-p1{
+
+font-size: 1rem;
+font-weight: 700;
+
+
+}
+
+.box-p2{
+
+    font-size: 0.85rem;
+    opacity: 0.95;
+
+}
+
+.badge{
+    border: none;
+    font-weight: 750;
+    border-radius: 100px;
+    padding: 0.4rem 0.6rem;
+    margin-top:1rem;
+    height: 2rem;
+    width: fit-content;
+    background-color: white;
+}
+
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+
+.sticky-nav{
+
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem;
+    
+    align-items: center;
+    z-index: 3;
+    background-color: rgb(11, 11, 11);
+    width: 100%;
+}
+
+
+
+.sticky-nav-arrows img{
+    
+    margin-left: 0.5rem;
+    border-radius: 50%;
+   
+}
+
+.sticky-nav-arrows{
+    display: flex;
+}
+
+.backward-arrow .forward-arrow{
+   
+    background-color: black;
+    border-radius: 50%;
+    
+
+}
+
+
+/* .sticky-nav-icons{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+.nav-item{
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px){
+
+    .hide{
+        display: none;
+    }
+
+
+
+}
+
+.card{
+    width: 150px;
+    border-radius: 0.5rem;
+    padding:1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.card-containers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+    
+    
+}
+
+.card-content{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.card:hover{
+    background-color: #232323;
+    
+    
+    
+}
+
+.green-button{
+    background-color: green;
+    height: 40px;
+    width: 25%;
+    position: absolute;
+    left: 120px;
+    bottom: 117px;
+    border-radius: 50%;
+    display: none;
+
+}
+
+.footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.line{
+
+    width: 90%;
+    height: 30%;
+border-top: 1px solid white; 
+opacity: 0.4;   
+
+
+}
+
+.song-details{
+    width: 25%;
+    display: flex;
+    /* background-color: blue; */
+
+}
+
+
+
+
+.music_player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player{
+   
+    width: 50%;
+    /* background-color: green; */
+}
+
+.song-details{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+
+.song-details img{
+    height: 4rem;
+}
+
+.song-details img,div,i{
+    margin-right: 1rem;
+}
+
+.artist{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: -0.6rem;
+}
+
+.song-details i{
+    opacity: 0.7;
+    
+}
+
+.song-details i:hover{
+    opacity: 1;
+
+}
+
+.player-control{
+    height: 1.25rem;
+    margin-right: 1.25rem;
+    opacity: 0.7;
+ 
+}
+
+.playback-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.extra-player-controls{
+    display: flex;
+    width: 25%;
+   
+    justify-content: center;
+    
+}
+
+
+.last-part{
+    margin-left: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.last-part:hover{
+    opacity: 1;
+}
+
+.player-control:hover{
+    opacity: 1;
+
+}
+
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+
+.progress-bar span{
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.progress-bar-range {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.progress-bar-range::-webkit-slider-runnable-track{
+
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.15rem;
+
+}
+
+.progress-bar-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -4px;
+    
+    
+}
+
+
