@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.btn{
+    width: 25%;
+    height: 200px;
+    margin: 50px 100px;
+    border: 7px solid black;
+    border-radius: 50px;
+
+
+}
+
+.red{
+
+    background-color: rgba(140, 55, 55, 0.616);
+}
+
+.green{
+    background-color: rgba(79, 153, 79, 0.676);
+    
+}
+
+.blue{
+    background-color: rgb(68, 68, 164);
+
+}
+
+.yellow{
+    background-color: rgb(228, 228, 107);
+
+}
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: green;
+}
+
+.game_over{
+    background-color: red;
+}
